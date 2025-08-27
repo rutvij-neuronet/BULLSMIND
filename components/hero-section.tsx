@@ -1,9 +1,15 @@
+"use client"
+
 import React from "react"
 import { Button } from "@/components/ui/button"
 import { Header } from "./header"
-import Link from "next/link"
+import { Analytics } from "@/lib/analytics"
 
 export function HeroSection() {
+  const handleCTAClick = () => {
+    Analytics.trackButtonClick("Join Waitlist", "hero")
+  }
+
   return (
     <section
       className="flex flex-col items-center text-center relative mx-auto rounded-2xl overflow-hidden my-6 py-0 px-4
@@ -448,11 +454,12 @@ export function HeroSection() {
         </p>
       </div>
 
-      <Link href="https://vercel.com/home" target="_blank" rel="noopener noreferrer">
-        <Button className="relative z-10 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10">
-          Access Premium Analytics
-        </Button>
-      </Link>
+      <Button
+        className="relative z-10 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10"
+        onClick={handleCTAClick}
+      >
+        Join Waitlist
+      </Button>
     </section>
   )
 }

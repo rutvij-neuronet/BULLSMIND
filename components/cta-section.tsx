@@ -1,7 +1,13 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { Analytics } from "@/lib/analytics"
 
 export function CTASection() {
+  const handleCTAClick = () => {
+    Analytics.trackButtonClick("Join Waitlist", "cta_section")
+  }
+
   return (
     <section className="w-full pt-20 md:pt-60 lg:pt-60 pb-10 md:pb-20 px-5 relative flex flex-col justify-center items-center overflow-visible">
       <div className="absolute inset-0 top-[-90px]">
@@ -111,14 +117,13 @@ export function CTASection() {
             Mind's sophisticated analytical framework
           </p>
         </div>
-        <Link href="https://vercel.com/home" target="_blank" rel="noopener noreferrer">
-          <Button
-            className="px-[30px] py-2 bg-secondary text-secondary-foreground text-base font-medium leading-6 rounded-[99px] shadow-[0px_0px_0px_4px_rgba(255,255,255,0.13)] hover:bg-secondary/90 transition-all duration-200"
-            size="lg"
-          >
-            Start Trading Now
-          </Button>
-        </Link>
+        <Button
+          className="px-[30px] py-2 bg-secondary text-secondary-foreground text-base font-medium leading-6 rounded-[99px] shadow-[0px_0px_0px_4px_rgba(255,255,255,0.13)] hover:bg-secondary/90 transition-all duration-200"
+          size="lg"
+          onClick={handleCTAClick}
+        >
+          Join Waitlist
+        </Button>
       </div>
     </section>
   )
