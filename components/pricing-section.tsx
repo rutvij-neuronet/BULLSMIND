@@ -9,53 +9,53 @@ export function PricingSection() {
 
   const pricingPlans = [
     {
-      name: "Free",
+      name: "Starter",
       monthlyPrice: "$0",
       annualPrice: "$0",
-      description: "Perfect for individuals starting their journey.",
+      description: "Perfect for individual traders beginning their journey.",
       features: [
-        "Real-time code suggestions",
-        "Basic integration logos",
-        "Single MCP server connection",
-        "Up to 2 AI coding agents",
-        "Vercel deployments with Pointer branding",
+        "Real-time market data feeds",
+        "Basic technical indicators",
+        "Single broker integration",
+        "Up to 2 algorithmic strategies",
+        "Portfolio tracking with Bulls Mind branding",
       ],
-      buttonText: "Get Started",
+      buttonText: "Start Trading",
       buttonClass:
         "bg-zinc-300 shadow-[0px_1px_1px_-0.5px_rgba(16,24,40,0.20)] outline outline-0.5 outline-[#1e29391f] outline-offset-[-0.5px] text-gray-800 text-shadow-[0px_1px_1px_rgba(16,24,40,0.08)] hover:bg-zinc-400",
     },
     {
-      name: "Pro",
-      monthlyPrice: "$20",
-      annualPrice: "$16",
-      description: "Ideal for professionals.",
+      name: "Professional",
+      monthlyPrice: "$99",
+      annualPrice: "$79",
+      description: "Ideal for serious traders and analysts.",
       features: [
-        "Enhanced real-time previews",
-        "Unlimited integrations with custom logos",
-        "Multiple MCP server connections",
-        "Up to 10 concurrent AI coding agents",
-        "Collaborative coding with team chat",
-        "Advanced version control integrations",
-        "Priority email and chat support",
+        "Advanced algorithmic analysis",
+        "Unlimited broker integrations",
+        "Multi-asset data connectivity",
+        "Up to 10 concurrent trading strategies",
+        "Real-time portfolio collaboration",
+        "Institutional-grade risk management",
+        "Priority market research and support",
       ],
-      buttonText: "Join now",
+      buttonText: "Upgrade Now",
       buttonClass:
         "bg-primary-foreground shadow-[0px_1px_1px_-0.5px_rgba(16,24,40,0.20)] text-primary text-shadow-[0px_1px_1px_rgba(16,24,40,0.08)] hover:bg-primary-foreground/90",
       popular: true,
     },
     {
-      name: "Ultra",
-      monthlyPrice: "$200",
-      annualPrice: "$160",
-      description: "Tailored solutions for teams.",
+      name: "Institutional",
+      monthlyPrice: "$499",
+      annualPrice: "$399",
+      description: "Tailored solutions for hedge funds and institutions.",
       features: [
-        "Dedicated account support",
-        "Unlimited MCP server clusters",
-        "Unlimited AI coding agents",
+        "Dedicated quantitative analyst support",
+        "Unlimited strategy deployment clusters",
+        "Unlimited parallel execution engines",
         "Enterprise-grade security and compliance",
-        "Priority deployments and SLA guarantees",
+        "Priority execution and SLA guarantees",
       ],
-      buttonText: "Talk to Sales",
+      buttonText: "Contact Sales",
       buttonClass:
         "bg-secondary shadow-[0px_1px_1px_-0.5px_rgba(16,24,40,0.20)] text-secondary-foreground text-shadow-[0px_1px_1px_rgba(16,24,40,0.08)] hover:bg-secondary/90",
     },
@@ -66,11 +66,11 @@ export function PricingSection() {
       <div className="self-stretch relative flex flex-col justify-center items-center gap-2 py-0">
         <div className="flex flex-col justify-start items-center gap-4">
           <h2 className="text-center text-foreground text-4xl md:text-5xl font-semibold leading-tight md:leading-[40px]">
-            Pricing built for every developer
+            Pricing built for every trader
           </h2>
           <p className="self-stretch text-center text-muted-foreground text-sm font-medium leading-tight">
-            Choose a plan that fits your coding workflow, from individuals starting out to <br /> growing professionals
-            and large organizations.
+            Choose a plan that fits your trading strategy, from individual investors starting out to <br />{" "}
+            sophisticated professionals and institutional asset managers.
           </p>
         </div>
         <div className="pt-4">
@@ -166,7 +166,7 @@ export function PricingSection() {
               >
                 <div className="px-1.5 flex justify-center items-center gap-2">
                   <span
-                    className={`text-center text-sm font-medium leading-tight ${plan.name === "Free" ? "text-gray-800" : plan.name === "Pro" ? "text-primary" : "text-zinc-950"}`}
+                    className={`text-center text-sm font-medium leading-tight ${plan.name === "Starter" ? "text-gray-800" : plan.name === "Professional" ? "text-primary" : "text-zinc-950"}`}
                   >
                     {plan.buttonText}
                   </span>
@@ -177,7 +177,7 @@ export function PricingSection() {
               <div
                 className={`self-stretch text-sm font-medium leading-tight ${plan.popular ? "text-primary-foreground/70" : "text-muted-foreground"}`}
               >
-                {plan.name === "Free" ? "Get Started today:" : "Everything in Free +"}
+                {plan.name === "Starter" ? "Get Started today:" : "Everything in Starter +"}
               </div>
               <div className="self-stretch flex flex-col justify-start items-start gap-3">
                 {plan.features.map((feature) => (

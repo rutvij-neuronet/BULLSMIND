@@ -3,57 +3,57 @@ import Image from "next/image"
 const testimonials = [
   {
     quote:
-      "The real-time code suggestions from Pointer feel like having a senior engineer reviewing every line of code as you write. The accuracy of its recommendations has improved our overall code quality, reduced review time.",
+      "Bulls Mind's algorithmic analysis feels like having a quantitative hedge fund team scrutinizing every market movement. The precision of their predictive models has enhanced our portfolio performance and minimized drawdown periods significantly.",
     name: "Annette Black",
-    company: "Sony",
+    company: "Goldman Sachs",
     avatar: "/images/avatars/annette-black.png",
     type: "large-teal",
   },
   {
     quote:
-      "Integrating Pointer into our stack was smooth, and the MCP server connections saved us days of configuration work",
+      "Integrating Bulls Mind into our trading infrastructure was seamless, and the multi-asset data feeds saved us weeks of broker negotiations.",
     name: "Dianne Russell",
-    company: "McDonald's",
+    company: "JPMorgan Chase",
     avatar: "/images/avatars/dianne-russell.png",
     type: "small-dark",
   },
   {
     quote:
-      "Pointer’s multi-agent coding feature has been a game changer. We’re fixing complex bugs in hours instead of spending entire sprints on them.",
+      "Bulls Mind's parallel strategy execution has been transformational. We're capitalizing on market inefficiencies in minutes instead of missing opportunities entirely.",
     name: "Cameron Williamson",
-    company: "IBM",
+    company: "BlackRock",
     avatar: "/images/avatars/cameron-williamson.png",
     type: "small-dark",
   },
   {
     quote:
-      "We no longer juggle multiple tools. Pointer brought all our integrations together in one place, which simplified our entire workflow.",
+      "We no longer juggle multiple trading platforms. Bulls Mind consolidated all our broker integrations into one sophisticated ecosystem, streamlining our entire operation.",
     name: "Robert Fox",
-    company: "MasterCard",
+    company: "Citadel Securities",
     avatar: "/images/avatars/robert-fox.png",
     type: "small-dark",
   },
   {
     quote:
-      "We started with the free plan just to test it out, but within a week we upgraded to Pro. Now, we can’t imagine coding without it",
+      "We started with the basic tier just to evaluate the platform, but within days we upgraded to Premium. Now, we can't imagine trading without their institutional-grade analytics.",
     name: "Darlene Robertson",
-    company: "Ferrari",
+    company: "Renaissance Technologies",
     avatar: "/images/avatars/darlene-robertson.png",
     type: "small-dark",
   },
   {
     quote:
-      "Collaborative coding feels effortless now. With Pointer’s real-time previews, pair programming has become faster and more productive.",
+      "Collaborative portfolio management feels effortless now. With Bulls Mind's real-time tracking, our team coordination has become exponentially more efficient and profitable.",
     name: "Cody Fisher",
-    company: "Apple",
+    company: "Bridgewater Associates",
     avatar: "/images/avatars/cody-fisher.png",
     type: "small-dark",
   },
   {
     quote:
-      "Deploying on Vercel with Pointer was not just simple, it felt seamless. We went from coding to seeing our changes live in minutes without worrying about build pipelines or configuration issues.",
+      "Deploying sophisticated trading strategies with Bulls Mind wasn't just straightforward, it felt revolutionary. We transitioned from concept to live execution in hours without worrying about latency or connectivity issues.",
     name: "Albert Flores",
-    company: "Louis Vuitton",
+    company: "Two Sigma",
     avatar: "/images/avatars/albert-flores.png",
     type: "large-light",
   },
@@ -133,11 +133,11 @@ export function TestimonialGridSection() {
       <div className="self-stretch py-6 md:py-8 lg:py-14 flex flex-col justify-center items-center gap-2">
         <div className="flex flex-col justify-start items-center gap-4">
           <h2 className="text-center text-foreground text-3xl md:text-4xl lg:text-[40px] font-semibold leading-tight md:leading-tight lg:leading-[40px]">
-            Coding made effortless
+            Trading made intelligent
           </h2>
           <p className="self-stretch text-center text-muted-foreground text-sm md:text-sm lg:text-base font-medium leading-[18.20px] md:leading-relaxed lg:leading-relaxed">
-            {"Hear how developers ship products faster, collaborate seamlessly,"} <br />{" "}
-            {"and build with confidence using Pointer's powerful AI tools"}
+            {"Discover how institutional investors amplify returns, execute flawlessly,"} <br />{" "}
+            {"and dominate markets using Bulls Mind's sophisticated analytical framework"}
           </p>
         </div>
       </div>

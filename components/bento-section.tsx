@@ -36,33 +36,33 @@ const BentoCard = ({ title, description, Component }) => (
 export function BentoSection() {
   const cards = [
     {
-      title: "AI-powered code reviews.",
-      description: "Get real-time, smart suggestions for cleaner code.",
+      title: "Algorithmic market analysis.",
+      description: "Leverage sophisticated AI models for precision market forecasting.",
       Component: AiCodeReviews,
     },
     {
-      title: "Real-time coding previews",
-      description: "Chat, collaborate, and instantly preview changes together.",
+      title: "Real-time portfolio tracking",
+      description: "Monitor positions, analyze performance, and execute trades instantly.",
       Component: RealtimeCodingPreviews,
     },
     {
-      title: "One-click integrations",
-      description: "Easily connect your workflow with popular dev tools.",
+      title: "Seamless broker integrations",
+      description: "Connect effortlessly with leading trading platforms and exchanges.",
       Component: OneClickIntegrationsIllustration,
     },
     {
-      title: "Flexible MCP connectivity",
-      description: "Effortlessly manage and configure MCP server access.",
-      Component: MCPConnectivityIllustration, // Updated component
+      title: "Multi-asset data connectivity",
+      description: "Access comprehensive market data across equities, options, and futures.",
+      Component: MCPConnectivityIllustration,
     },
     {
-      title: "Launch parallel coding agents", // Swapped position
-      description: "Solve complex problems faster with multiple AI agents.",
-      Component: ParallelCodingAgents, // Updated component
+      title: "Parallel strategy execution",
+      description: "Deploy multiple trading algorithms simultaneously for diversified returns.",
+      Component: ParallelCodingAgents,
     },
     {
-      title: "Deployment made easy", // Swapped position
-      description: "Go from code to live deployment on Vercel instantly.",
+      title: "Automated trade deployment",
+      description: "Execute sophisticated strategies with institutional-grade precision.",
       Component: EasyDeployment,
     },
   ]
@@ -74,11 +74,11 @@ export function BentoSection() {
         <div className="self-stretch py-8 md:py-14 flex flex-col justify-center items-center gap-2 z-10">
           <div className="flex flex-col justify-start items-center gap-4">
             <h2 className="w-full max-w-[655px] text-center text-foreground text-4xl md:text-6xl font-semibold leading-tight md:leading-[66px]">
-              Empower Your Workflow with AI
+              Amplify Your Trading Arsenal
             </h2>
             <p className="w-full max-w-[600px] text-center text-muted-foreground text-lg md:text-xl font-medium leading-relaxed">
-              Ask your AI Agent for real-time collaboration, seamless integrations, and actionable insights to
-              streamline your operations.
+              Harness cutting-edge quantitative models, institutional-grade analytics, and proprietary algorithms to
+              orchestrate systematic wealth accumulation through strategic market positioning.
             </p>
           </div>
         </div>
